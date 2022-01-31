@@ -32,18 +32,25 @@ body {
 .header-bg {
     position: fixed;
     top: 0;
+    width: 100%;
+    background: white;
+    padding-left: 52px;
+    height: 80px;
+    z-index: 9;
 }
 
 .header-bg .internal-header-div {
     float: left;
+    padding-top: 14px;
 }
 
 .header-bg div.internal-header-div:last-child {
     margin-top: 16px;
+    padding-top: 0;
 }
 
 .header-bg .internal-header-div img {
-    height: 80px;
+    height: 52px;
 }
 
 .header-bg .internal-header-div ul li {
@@ -151,21 +158,30 @@ Skill Section Starts
 
 .skill {
     display: flex;
-    padding: 12px 48px;
+    padding: 24px 48px;
 }
 
 .skill .skill-block {
     float: left;
     width: 60%;
+    display: flex;
 }
 
 .skill .skill-content {
     width: 40%;
+    /* background: #2D743B; */
+    padding-right: 24px;
 }
 
 .skill .card {
     background-color: #232828;
     width: 280px;
+    margin: 12px;
+}
+
+.skill .card:last-child {
+    height: 60%;
+    margin-top: 52px;
 }
 
 .skill .card .card-head {
@@ -191,7 +207,87 @@ Skill Section Starts
     text-align: center;
 }
 
+.skill p#sub-topic {
+    color: var(--primary);
+    font-weight: 500;
+    position: relative;
+    padding-left: 24px;
+}
+
+.skill p#sub-topic:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 3%;
+    height: 2px;
+    background-color: var(--secondary);
+}
+
+.skill .skill-content p {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.skill .skill-content .button-div {
+    margin-top: 28px;
+}
+
+.btn {
+    padding: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+    border-radius: 24px;
+}
+
+.btn-primary {
+    background: var(--primary);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+}
+
+.skill .skill-content .button-div .btn:first-child {
+    margin-left: 0;
+}
+
 
 /* 
 Skill Section Ends 
 */
+
+
+/* Education Section Starts */
+
+.education {
+    padding: 82px;
+}
+
+.education .education-block {
+    background: #232828;
+    border-radius: 32px;
+    display: flex;
+}
+
+.education .education-block .education-detail {
+    width: 33.33%;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.education h1 {
+    color: var(--primary);
+}
+
+.education p {
+    color: white;
+}
+
+.education .accordion-block {
+    display: none;
+}

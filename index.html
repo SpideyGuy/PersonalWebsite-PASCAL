@@ -11,7 +11,7 @@
 <body>
 
     <!-- Header Div Start -->
-    <div class="container header-bg">
+    <div class="header-bg">
         <div class="internal-header-div">
             <img src="./assets/img/Logo.png" />
         </div>
@@ -62,31 +62,92 @@
                     </p>
                 </div>
             </div>
-            <!-- <div class="card">
+            <div class="card">
                 <div class="card-head">
                     <img src="./assets/img/idea.png" />
                 </div>
                 <div class="card-body">
-                    <h4>Design Skill</h4>
-                    <p>I have a good design skill. I have proficiency in Design Applications like:
+                    <h4>Programming Skill</h4>
+                    <p>I am programming enthusiast. I know:
                         <ul>
-                            <li>Adobe Photoshop</li>
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe Indesign</li>
-                            <li>Figma</li>
+                            <li>PHP</li>
+                            <li>Java</li>
                         </ul>
                     </p>
                 </div>
-            </div> -->
+            </div>
         </div>
         <div class="skill-content">
+            <p id="sub-topic">My Skills</p>
+            <h1>Why hire me?</h1>
+            <p>I am a hard-working enthusaist eager to learn new programming language and I have a good learning curve. I am sure to uplift my knowledge and make your project better.</p>
+            <p>I am a hard-working enthusaist eager to learn new programming language and I have a good learning curve. I am sure to uplift my knowledge and make your project better.</p>
+            <p>I am a hard-working enthusaist eager to learn new programming language and I have a good learning curve. I am sure to uplift my knowledge and make your project better.</p>
+
+            <div class="button-div">
+                <a href="#" class="btn btn-primary">Know More</a>
+                <a href="#" class="btn btn-secondary">Hire Me</a>
+            </div>
 
         </div>
     </div>
     <!-- Skill Section End -->
 
+    <!-- Education Section Start -->
+
+    <div class="education">
+        <div class="education-block">
+            <div class="education-detail">
+                <h1>SEE</h1>
+                <button class="btn btn-secondary accordion">Click for detail</button>
+                <div class="accordion-block">
+                    <p>Passed Year: 2016 AD</p>
+                    <p>Passed GPA: 4</p>
+                    <p>School: ABC School</p>
+                </div>
+            </div>
+            <div class="education-detail">
+                <h1>HSEB</h1>
+                <button class="btn btn-secondary accordion">Click for detail</button>
+                <div class="accordion-block">
+                    <p>Passed Year: 2018 AD</p>
+                    <p>Passed GPA: 2.8</p>
+                    <p>School: DEF School</p>
+                </div>
+            </div>
+            <div class="education-detail">
+                <h1>Other Education</h1>
+                <button class="btn btn-secondary accordion">Click for detail</button>
+                <div class="accordion-block">
+                    <p>Training on Web Development</p>
+                    <p>Training on Public Speaking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section End -->
+
     <footer>
-        <script src="./assets/js/custom.js"></script>
+        <script>
+            src = "./assets/js/custom.js" >
+        </script>
+        <script>
+            var accordion = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < accordion.length; i++) {
+                accordion[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var block = this.nextElementSibling;
+                    if (block.style.display === "block") {
+                        block.style.display = "none";
+                    } else {
+                        block.style.display = "block";
+                    }
+                });
+            }
+        </script>
     </footer>
 </body>
 
