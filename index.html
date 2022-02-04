@@ -18,10 +18,10 @@
         <div class="internal-header-div">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
+                <li><a href="#hero-section">About Me</a></li>
+                <li><a href="#skill-section">My Skills</a></li>
+                <li><a href="#education-section">Education</a></li>
+                <li><a href="#experience-section">Experience</a></li>
                 <li><a href="#">Contact Me</a></li>
             </ul>
         </div>
@@ -29,7 +29,7 @@
     <!-- Header Div End -->
 
     <!-- Hero Div Start -->
-    <div class="hero">
+    <div class="hero" id="hero-section">
         <div class="about-hero">
             <h3>Welcome to my website</h3>
             <p>Hello folks! I am Ramesh Shrestha <br/><span>[A Web Developer]</span></p>
@@ -44,7 +44,7 @@
     <!-- Hero Div End -->
 
     <!-- Skill Section Start -->
-    <div class="skill">
+    <div class="skill" id="skill-section">
         <div class="skill-block">
             <div class="card">
                 <div class="card-head">
@@ -95,7 +95,7 @@
 
     <!-- Education Section Start -->
 
-    <div class="education">
+    <div class="education" id="education-section">
         <div class="education-block">
             <div class="education-detail">
                 <h1>SEE</h1>
@@ -128,10 +128,52 @@
 
     <!-- Education Section End -->
 
+    <div class="experience" id="experience-section">
+        <div class="experience-header">
+            <h1>Experience</h1>
+        </div>
+        <div class="experience-wrapper">
+            <div class="experience-block">
+                <div id="html-progress">
+                    <div id="html-progress-bar"></div>
+                </div>
+                <div class="experience-content">
+                    <h2>HTML</h2>
+                </div>
+            </div>
+            <div class="experience-block">
+                <div id="css-progress">
+                    <div id="css-progress-bar"></div>
+                </div>
+                <div class="experience-content">
+                    <h2>CSS</h2>
+                </div>
+            </div>
+            <div class="experience-block">
+                <div id="js-progress">
+                    <div id="js-progress-bar"></div>
+                </div>
+                <div class="experience-content">
+                    <h2>JS</h2>
+                </div>
+            </div>
+            <div class="experience-block">
+                <div id="php-progress">
+                    <div id="php-progress-bar"></div>
+                </div>
+                <div class="experience-content">
+                    <h2>PHP</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="./assets/img/ronaldo.jpeg" />
+    </div>
+
     <footer>
-        <script>
-            src = "./assets/js/custom.js" >
-        </script>
+        <script src="./assets/js/custom.js"></script>
         <script>
             var accordion = document.getElementsByClassName("accordion");
             var i;
