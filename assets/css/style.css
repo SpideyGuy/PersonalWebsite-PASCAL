@@ -378,3 +378,79 @@ Skill Section Ends
         background-color: var(--secondary);
     }
     /* Experience Section Ends */
+    /* Contact Section Starts */
+    
+    .contact {
+        padding: 24px 82px;
+    }
+    
+    .contact .contact-header {
+        text-align: center;
+    }
+    
+    .contact .contact-header h1 {
+        color: var(--primary);
+        font-weight: 500;
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 18px;
+    }
+    
+    .contact .contact-header h1:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 14%;
+        height: 2px;
+        background-color: var(--secondary);
+    }
+    
+    .contact .contact-body {
+        margin: 0 108px;
+        border: 2px dashed var(--secondary);
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 32px
+    }
+    
+    .contact .contact-body-block {
+        display: flex;
+    }
+    
+    .contact .contact-body .contact-block {
+        width: 50%;
+    }
+    
+    .contact .contact-body input {
+        width: 80%;
+    }
+    
+    .contact .contact-body input {
+        font-size: 16px;
+        margin: 8px;
+        padding: 8px;
+    }
+    
+    .contact .contact-body textarea {}
+    /* .contact .contact-body input[type="text"]:active {
+        border: 1px dashed var(--primary)!important;
+    } */
+    
+    .contact .contact-body .contact-block:first-child {
+        /* background: red; */
+    }
+    
+    .contact .contact-body .contact-block:last-child {
+        /* background: blue; */
+        text-align: left;
+    }
+    
+    .contact .contact-body-footer {
+        margin-top: 32px;
+    }
+    
+    .contact .contact-body-footer .btn {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    /* Contact Section Ends */
